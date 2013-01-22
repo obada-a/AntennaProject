@@ -1,3 +1,4 @@
-    Python scripts for computing of Chebyshev synthesis for an patch array antenna. 
+Python scripts for computing of Chebyshev synthesis for an patch array antenna. 
 Implemented by Alexandru Obada and Daniele Biasini for Electromagnetics Technologies in Wireless Systems course. 
-Tor Vergata University
+In "relation" folder the Latex code of the relation.
+Tor Vergata University, January 2013
