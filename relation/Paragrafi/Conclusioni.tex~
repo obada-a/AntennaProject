@@ -1,5 +1,0 @@
-\section{Conclusioni}
-Lo studio effettuato nelle pagine precedenti mostra come la scelta ideale sia quella di $M = 9$ e $d = 0.031 $, questa scelta deriva dai risultati mostrati nei grafici \ref{img:module9}, \ref{img:gain9}, \ref{img:bw9}. \\
-Il primo mostra infatti come la specifica sulla differenza in $dB$ tra il lobo principale e quello secondario, $R$, sia soddisfatta. \\
-La seconda evidenzia il guadagno massimo del patch e dell'array, $16.42 dB$, come da specifica; mentre nel terzo si vede chiaramente come la scelta di \omissis per la distanza tra gli elementi dell'array sia ideale per ottenere un angolo a metà potenza pari a $10^\circ$. \\[1cm]
-Un'ulteriore scelta potrebbe essere $M = 7$ con la distanza ottima calcolata nella (\ref{eq:d}), $d = 0.043831493932021195$, questa scelta soddisferebbe sicuramente i requisiti su $R$ e $B$, ma il guadagno sarebbe di $0.8 dB$ inferiore a quello richiesto.
