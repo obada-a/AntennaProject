@@ -1,0 +1,107 @@
+              %******************************************%
+              %                                          %
+              %     Modello di articolo scientifico      %
+              %            di Lorenzo Pantieri ©         %
+              %                                          %
+              %         versione: 26 agosto 2012         %
+              %                                          %
+              %******************************************%
+       
+
+% I seguenti commenti speciali impostano:
+% 1. utf8 come codifica di input,
+% 2. PDFLaTeX come motore di composizione;
+% 3. Articolo.tex come documento principale;
+% 4. il controllo ortografico italiano per l'editor.
+
+% !TEX encoding = UTF-8
+% !TEX TS-program = pdflatex
+% !TEX root = Articolo.tex
+% !TEX spellcheck = it-IT
+
+\documentclass[10pt,%                       % corpo del font principale
+               a4paper,%                    % carta A4
+               oneside,%                    % solo fronte
+%              twoside,%                    % fronte-retro
+               ]{article}                  % classe report di KOMA-Script;
+               
+\usepackage[T1]{fontenc}                    % codifica dei font:
+                                            % NOTA BENE! richiede una distribuzione *completa* di LaTeX,
+                                            % per esempio TeXLive o MiKTeX *complete*
+
+\usepackage[utf8]{inputenc}                 % codifica di input; anche [latin1] va bene
+                                            % NOTA BENE! va accordata con le preferenze dell'editor
+
+\usepackage[english,italian]{babel}         % per scrivere in italiano e in inglese;
+                                            % l'ultima lingua (l'italiano) risulta predefinita
+
+\usepackage[binding=5mm]{layaureo}          % margini ottimizzati per l'A4; rilegatura di 5 mm
+
+\usepackage{indentfirst}                    % rientra il primo capoverso di ogni sezione
+
+\usepackage{booktabs}                       % tabelle
+
+\usepackage{tabularx}                       % tabelle di larghezza prefissata
+
+\usepackage{graphicx}                       % immagini
+
+\usepackage{subfig}                         % sottofigure, sottotabelle
+
+\usepackage{caption}                        % didascalie
+
+\usepackage{listings}                       % codici
+
+\usepackage[font=small]{quoting}            % citazioni
+
+\usepackage{amsmath,amssymb,amsthm}         % matematica
+
+\usepackage[italian]{varioref}              % riferimenti completi della pagina
+
+\usepackage{mparhack,fixltx2e,relsize}      % finezze tipografiche
+
+\usepackage[style=philosophy-modern,hyperref,backref,square,natbib]{biblatex}
+                                            % eccellente pacchetto per la bibliografia;
+                                            % produce uno stile di citazione autore-anno; 
+                                            % lo stile "numeric-comp" produce riferimenti numerici
+                                          
+\bibliography{Bibliografia}                 % database di biblatex 
+                                          
+\usepackage[dvipsnames]{xcolor}             % colori
+
+\usepackage{lipsum}                         % testo fittizio
+
+\usepackage{eurosym}                        % simbolo dell'euro
+
+\usepackage{hyperref}                       % collegamenti ipertestuali
+
+\usepackage{bookmark}                       % segnalibri
+
+\input{impostazioni-articolo}               % file con le impostazioni personali
+
+\begin{document}
+\pagestyle{headings} 
+%******************************************************************
+% Materiale iniziale
+%******************************************************************
+\input{MaterialeInizialeFinale/Frontespizio}
+\input{MaterialeInizialeFinale/Indici}
+\input{MaterialeInizialeFinale/Sommario+Abstract}
+%******************************************************************
+% Materiale principale
+%******************************************************************
+\input{Paragrafi/Patch}
+\input{Paragrafi/Array}
+\input{Paragrafi/Conclusioni}
+%\input{risultati patch}
+%\input{sintesi cheby}
+%\input{array feko}
+%\input{risultati array}
+%\input{Paragrafi/Lorem}
+%\input{Paragrafi/Ipsum}
+%\appendix
+%\input{Paragrafi/Dolor}
+% *****************************************************************
+% Materiale finale
+%******************************************************************
+%\input{MaterialeInizialeFinale/Bibliografia}
+\end{document}
