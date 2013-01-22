@@ -1,0 +1,26 @@
+% !TEX encoding = UTF-8
+% !TEX TS-program = pdflatex
+% !TEX root = ../Articolo.tex
+% !TEX spellcheck = it-IT
+
+%*******************************************************
+% Indici
+%*******************************************************
+\pdfbookmark{\contentsname}{tableofcontents}
+\setcounter{tocdepth}{2}
+\tableofcontents
+\markboth{\contentsname}{\contentsname} 
+
+%*******************************************************
+% Elenco delle figure
+%*******************************************************    
+\phantomsection
+\pdfbookmark{\listfigurename}{lof}
+\listoffigures
+
+%*******************************************************
+% Elenco delle tabelle
+%*******************************************************
+\phantomsection
+\pdfbookmark{\listtablename}{lot}
+\listoftables
